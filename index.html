@@ -3,91 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <title>Вводный курс. Ибрагимова Юлия</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <img src="giphy-3.gif" alt="Photo">
+    <div class="wrapper">
+        <div class="author">
+            <img src="giphy-3.gif" alt="Photo" class="author__picture">
+            <div class="author__info">
+                <h1 class="author__name">Ибрагимова Юлия</h1>
+                <p class="author__description">Студент курса</p>
+                <p class="author__description">
+                    <em>Этап: <strong>Вводный курс</strong></em>
+                </p>
+            </div>
+        </div>
+        <div class="card" id="idSocials">
+        <h2 class="title">Социальные сети</h2>
+            <ul class="socials">
+                <li>
+                    <a href="https://instagram.com/" target="_blank">Инстаграм</a>
+                </li>
+                <li>
+                    <a href="https://vk.com/" target="_blank">Вконтакте</a>
+                </li>
+                <li>
+                    <a href="https://t.me/" target="_blank">Телеграм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card card_traffic-light" id="idTrafficLight">
+            <h2 class="title">Светофор</h2>
+            <ol class="traffic-light">
+                <li class="_color_red">Красный</li>
+                <li class="_color_yellow">Жёлтый</li>
+                <li class="_color_green">Зелёный</li>
+            </ol>
+        </div>
+        <div class="card">
+            <h2 class="title" id="idTable">Таблица</h2>
+            <table class="table">
+                <tr>
+                    <th>Фамилия</th>
+                    <th>Класс</th>
+                    <th>Возраст</th>
+                </tr>
+                <tr>
+                    <td>Иванов</td>
+                    <td>5б</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Петров</td>
+                    <td>8а</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Васечкин</td>
+                    <td>1в</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card">
+            <h2 class="title">Навигация</h2>
+                <ul class="navigation">
+                    <li><a href="#idSocials">Соцсети</a></li>
+                    <li><a href="#idTrafficLight">Светофор</a></li>
+                    <li><a href="#idTable">Таблица</a></li>
+                </ul>
+        </div>
+        <div class="card">
+            <h2 class="title _align_center">Связаться со мной</h2>
+            <form class="feedback">
+                <div class="field">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" placeholder="ваше имя">
+                </div>
 
-    <h1>Юлия Ибрагимова</h1>
-    <p>Студент курса</p>
-    <p>
-        <em>Этап: <strong>Вводный курс</strong></em>
-    </p>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="ваш email">
+                </div>
 
-    <hr>
+                <div class="field">
+                    <label for="message">Сообщение:</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="ваше сообщение"></textarea>
+                </div>
 
-    <h2>Социальные сети</h2>
-    <ul>
-        <li>
-            <a href="https://instagram.com/" target="_blank">Инстаграм</a>
-        </li>
-        <li>
-            <a href="https://vk.com/" target="_blank">Вконтакте</a>
-        </li>
-        <li>
-            <a href="https://t.me/" target="_blank">Телеграм</a>
-        </li>
-    </ul>
-    
-    <hr>
-
-    <h2>Светофор</h2>
-    <ol>
-        <li>Красный</li>
-        <li>Жёлтый</li>
-        <li>Зелёный</li>
-    </ol>
-    
-    <hr>
-
-    <h2>Таблица</h2>
-    <table>
-        <tr>
-            <th>Фамилия</th>
-            <th>Класс</th>
-            <th>Возраст</th>
-        </tr>
-        <tr>
-            <td>Иванов</td>
-            <td>5б</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>Петров</td>
-            <td>8а</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>Васечкин</td>
-            <td>1в</td>
-            <td>9</td>
-        </tr>
-    </table>
-    
-    <hr>
-
-    <h2>Картинка</h2>
-    <a href="page_2.html">Посмотреть картинку</a>
-    
-    <hr>
-
-    <h2>Связаться со мной</h2>
-    <form>
-        <label for="name">Как Вас зовут?</label>
-        <input type="text" id="name" placeholder="имя">
-
-        <br/>
-
-        <label for="email">Укажите email</label>
-        <input type="email" id="email" placeholder="email">
-
-        <br/>
-
-        <label for="message">Что вы хотите мне сказать?</label>
-        <textarea name="" id="message" cols="30" rows="10"></textarea>
-
-        <br/>
-
-        <input type="submit" value="Отправить">
-    </form>
+                <input class="button" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
